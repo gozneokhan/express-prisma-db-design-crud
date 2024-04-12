@@ -79,18 +79,18 @@ Examples
 ```
 ---
 ```
-- `[prisma db push](https://www.prisma.io/docs/reference/api-reference/command-reference#db-push)`
-    - `schema.prisma` 파일에 정의된 설정값을 실제 데이터베이스에 **반영(push)**합니다.
+- `[prisma db push]
+    - `schema.prisma` 파일에 정의된 설정값을 실제 데이터베이스에 반영(push)합니다.
     - 내부적으로 `prisma generate`가 실행됩니다.
     - 데이터베이스 구조를 변경하거나 새로운 테이블을 생성할 수 있습니다.
-- `[prisma init](https://www.prisma.io/docs/reference/api-reference/command-reference#init)`
+- `[prisma init]
     - Prisma를 사용하기 위한 초기 설정을 생성합니다.
     - 이 명령어를 실행하면 `schema.prisma` 파일과 같은 필요한 설정 파일들이 생성됩니다.
-- `[prisma generate](https://www.prisma.io/docs/reference/api-reference/command-reference#generate)`
+- `[prisma generate]
     - Prisma Client를 생성하거나 업데이트 합니다.
-    - 대표적으로, `schema.prisma` 파일에 변경 사항이 생겼거나, 데이터베이스 구조가 변경되었을 때, 이 명령어를 사용해 **Prisma Client**를 최신 상태로 유지할 수 있습니다.
-- `[prisma db pull](https://www.prisma.io/docs/reference/api-reference/command-reference#db-pull)`
-    - 현재 연결된 데이터베이스의 구조를 `prisma.schema` 파일로 가져옵니다.**(pull)**
-    - 데이터베이스에서 구조 변경이 발생했을 때, 이 명령어를 사용하면 **Prisma Schema**를 최신 상태로 유지할 수 있습니다.
+    - 대표적으로, `schema.prisma` 파일에 변경 사항이 생겼거나, 데이터베이스 구조가 변경되었을 때, 이 명령어를 사용해 Prisma Client를 최신 상태로 유지할 수 있습니다.
+- `[prisma db pull]
+    - 현재 연결된 데이터베이스의 구조를 `prisma.schema` 파일로 가져옵니다.(pull)
+    - 데이터베이스에서 구조 변경이 발생했을 때, 이 명령어를 사용하면 Prisma Schema를 최신 상태로 유지할 수 있습니다.
     - 이후 `prisma generate` 명령어를 사용해 변경 사항을 Prisma Client에 반영할 수 있습니다.
 ```
