@@ -19,7 +19,7 @@ npx prisma init
 -   `prisma`는 우리가 **Prisma**를 터미널에서 사용할 수 있도록 도구를 설치하는 패키지입니다.
 -   `@prisma/client`는 우리가 Node.js 에서 **Prisma**를 사용할 수 있게 해줍니다.
 -   `nodemon`은 개발 코드가 변경되었을 때 자동으로 서버 재시작을 해주는 패키지입니다.
-
+---
 ```
 # nodemon 명령어
 
@@ -33,7 +33,7 @@ nodemon app.js
 
 # package.json nodemon 스크립트 등록하기
 ```
-
+---
 ```
 // package.json
 
@@ -43,7 +43,7 @@ nodemon app.js
 "dev": "nodemon app.js"
 },
 ```
-
+---
 ```
 Examples
 
@@ -77,19 +77,7 @@ Examples
   Display Prisma debug info
   $ prisma debug
 ```
-
-model Products {
-productId Int @id @default(autoincrement()) @map("productId")
-productName String @unique @map("productName")
-price Int @default(1000) @map("price")
-info String? @default(now()) @db.Text
-
-createdAt DateTime @default(now()) @map("createdAt")
-updatedAt DateTime @updatedAt @map("updatedAt")
-
-@@map("Products")
-}
-
+---
 ```
 - `[prisma db push](https://www.prisma.io/docs/reference/api-reference/command-reference#db-push)`
     - `schema.prisma` 파일에 정의된 설정값을 실제 데이터베이스에 **반영(push)**합니다.
